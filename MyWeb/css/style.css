@@ -1,0 +1,30 @@
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+
+h2{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+#p1{
+    color: brown;
+}
+
+.verde{
+    color: green;
+}
+
+.grande{
+    font-size: 1.4rem;
+}
+
+header > p{
+    color: violet;
+}
+
+h1.enorme{
+    font-size: 5rem;
+}
+
+p[lang='es']{
+    color: tomato;
+}
