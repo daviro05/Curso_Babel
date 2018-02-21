@@ -1,0 +1,51 @@
+*, 
+*::before,*::after,
+*:before,*:after {
+   box-sizing: border-box;
+}
+
+div.flotar{
+    width: 90%;
+    /*margen aplicado arriba-abajo e izq-derecha */
+    margin:2rem auto;
+    border: 1px solid black;
+    /*overflow: hidden;*/
+}
+
+.flotar:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.flotar p{
+    width: 21%;
+    float:left;
+    background-color: orange;
+    padding: 2rem 1rem;
+}
+
+.flotar p:not(:last-child){
+    margin-right:5%;
+}
+
+div.inline{
+    width: 90%;
+    /*margen aplicado arriba-abajo e izq-derecha */
+    margin:2rem auto;
+    border: 1px solid black;
+    /*overflow: hidden;*/
+}
+
+.inline p{
+    width: 21%;
+    background-color: greenyellow;
+    padding: 2rem 1rem;
+    display: inline-block;
+
+}
+
+.inline p:not(:first-of-type){
+    margin-left: -5px;
+   
+}
