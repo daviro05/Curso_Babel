@@ -1,2 +1,35 @@
-@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+*, *::before,*::after,*:before,*:after{
+    box-sizing: border-box;
+}
 
+.wraper{
+    margin:2rem;
+    max-width: 980px;
+    padding: 1%;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+figure img{
+    width: 40%;
+}
+
+cite{
+    quotes: '"' '"';
+}
+
+cite:before{
+    content: open-quote;
+}
+cite:after{
+    content: close-quote;
+}
+
+ul
