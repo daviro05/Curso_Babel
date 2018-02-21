@@ -3,6 +3,11 @@ Curso en Babel. BabelCamp 2018
 
 @David Rodríguez Marco
 
+En este proyecto encontraremos:
+
+* Pruebas: Para realizar pruebas durante el curso.
+* MyWeb: Página que se irá realizando a lo largo del curso.
+
 ## HTML, CSS y JS
 
 *Entorno*
