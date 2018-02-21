@@ -6,7 +6,9 @@ Curso en Babel. BabelCamp 2018
 En este proyecto encontraremos:
 
 * Pruebas: Para realizar pruebas durante el curso.
+* Posiciones: Colocar elementos.
 * MyWeb: Página que se irá realizando a lo largo del curso.
+
 
 ## HTML, CSS y JS
 
