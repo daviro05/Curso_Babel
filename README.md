@@ -8,6 +8,8 @@ En este proyecto encontraremos:
 * Pruebas: Para realizar pruebas durante el curso.
 * Posiciones: Colocar elementos.
 * MyWeb: Página que se irá realizando a lo largo del curso.
+* PruebasJS: Pruebas realizadas en JavaScript
+
 
 
 ## HTML, CSS y JS
