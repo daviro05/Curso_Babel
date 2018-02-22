@@ -12,8 +12,8 @@ div.flotar{
     /*overflow: hidden;*/
 }
 
-.flotar:after{
-    content: '';
+div.flotar:after{
+    content:'';
     display: block;
     clear: both;
 }
@@ -34,11 +34,11 @@ div.inline{
     /*margen aplicado arriba-abajo e izq-derecha */
     margin:2rem auto;
     border: 1px solid black;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .inline p{
-    width: 21%;
+    width: 25%;
     background-color: greenyellow;
     padding: 2rem 1rem;
     display: inline-block;
@@ -47,5 +47,4 @@ div.inline{
 
 .inline p:not(:first-of-type){
     margin-left: -5px;
-   
 }
