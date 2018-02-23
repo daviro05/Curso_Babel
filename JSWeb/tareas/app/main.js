@@ -22,17 +22,18 @@ class Main{
         this.aTareas.length ? this.mostrarTareas() : null;
     }
 
-      registrarse(){
+      registrarse(oEv){
       //console.log(this.user.nombre);
       this.user.nombre = this.vista.inNombre.value;
-      console.log(this.user.nombre);
+      //console.log(this.user.nombre);
       localStorage.setItem("nombre",this.user.nombre);
       this.mostrarNombre();
+      console.log(oEv);
     }
 
     mostrarNombre(){
         if(this.user.nombre){
-            console.log(this.user.nombre);
+            //console.log(this.user.nombre);
             this.vista.resultado.innerHTML = `<p>Hola ${this.user.nombre}</p>`;
             this.vista.resultado.classList.toggle("rojo");
         }
