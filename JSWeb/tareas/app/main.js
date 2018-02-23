@@ -2,7 +2,7 @@ class Main{
 
     constructor(){
         this.user = {
-            nombre: ""
+            nombre: localStorage.getItem("nombre")
         };
         this.vista = {
             btnRegistrar: document.querySelector("#btnRegistrarse"),
@@ -13,30 +13,43 @@ class Main{
             tareas: document.querySelector("#tareas") 
         };
         this.tarea = {};
-        this.aTareas = [];
+        this.aTareas = JSON.parse(localStorage.getItem("tareas")) ? JSON.parse(localStorage.getItem("tareas")) : [];
 
         this.vista.btnRegistrar.addEventListener('click',this.registrarse.bind(this),false);
         this.vista.btnAdd.addEventListener('click',this.addtarea.bind(this),false);
-
+        
+        this.mostrarNombre();
+        this.aTareas.length ? this.mostrarTareas() : null;
     }
 
-   registrarse(){
+      registrarse(){
       //console.log(this.user.nombre);
       this.user.nombre = this.vista.inNombre.value;
       console.log(this.user.nombre);
-      this.vista.resultado.innerHTML = `<p>Hola ${this.user.nombre}</p>`;
-      //this.vista.resultado.className = "rojo"; //Este no se utiliza ya que no sabemos si jhay mas clases
-      this.vista.resultado.classList.toggle("rojo");
+      localStorage.setItem("nombre",this.user.nombre);
+      this.mostrarNombre();
+    }
+
+    mostrarNombre(){
+        if(this.user.nombre){
+            console.log(this.user.nombre);
+            this.vista.resultado.innerHTML = `<p>Hola ${this.user.nombre}</p>`;
+            this.vista.resultado.classList.toggle("rojo");
+        }
     }
 
     addtarea(){
-        let lista;
         this.tarea = this.vista.inTarea.value;
         this.aTareas.push(this.tarea);
+        localStorage.setItem("tareas",JSON.stringify(this.aTareas))
+        this.mostrarTareas();
+    }
+
+    mostrarTareas(){
+        let lista;
         lista = "<ul>";
         this.aTareas.forEach(item =>lista+=`<li>${item}</li>`);
         lista += "</ul>";
-
         this.vista.tareas.innerHTML = lista;
     }
 
