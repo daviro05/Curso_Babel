@@ -1,0 +1,19 @@
+*, *::before,*::after,
+    *:before,*:after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    margin: 2rem auto;
+}
+
+footer{
+    margin-top: 4em;
+    border-top: 1px solid black;
+}
+
+.rojo{
+    font-weight: bold;
+    color:red;
+}
