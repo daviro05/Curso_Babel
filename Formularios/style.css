@@ -1,0 +1,16 @@
+*, 
+*::before, *::after, 
+*:before, *:after { 
+    box-sizing : border-box;
+}
+
+body {
+	width: 100%;
+	max-width: 960px;
+    min-width: 480px;
+	margin: 0em auto;
+    overflow: auto;
+    background-color: beige;
+}
+
+/*:valid{}*/

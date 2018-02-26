@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module"></script>
+    <title>Formularios</title>
+</head>
+<body>
+
+        <form name="form1" action="index.html" method="post">
+            <fieldset>
+                <legend>Datos con input text</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </p>
+                <p>
+                    <label for="ape">Apellidos:</label>
+                    <input type="text" name="ape" id="ape" placeholder="Apellidos">
+                </p>
+                <p>
+                        <label for="nombre">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="correo@dominio.com" required>
+                    </p>
+                <p>
+                    <label for="ape">Domicilio:</label>
+                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                </p>
+                <p>
+                    <label for="ape">Ciudad:</label>
+                    <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                </p>
+                <p>
+                    <label for="ape">Comentarios:</label>
+                    <textarea></textarea>
+            </fieldset>
+            <fieldset>
+                    <legend>Datos con radio-button</legend>
+                    <label for="op1">Selección con radio-button</label>
+                    <label><input type="radio" name="sel-radio" id="" value="si">SI</label>
+                    <label><input type="radio" name="sel-radio" id="" value="no">NO</label>
+            </fieldset>
+            <fieldset>
+                <legend>Botones con submit y reset</legend>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+            </fieldset>
+        </form>
+    
+</body>
+</html>
