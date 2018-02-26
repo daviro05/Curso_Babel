@@ -10,8 +10,8 @@ En este proyecto encontraremos:
 * MyWeb: Página que se irá realizando a lo largo del curso.
 * PruebasJS: Pruebas realizadas en JavaScript.
 * JSWeb: Ejercicios básicos de JS en la Web.
-
-
+* Menus: Estructura de menus con HTML5.
+* Formularios: Tipos de datos y validación.
 
 
 ## HTML, CSS y JS
