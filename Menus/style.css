@@ -1,0 +1,63 @@
+nav{
+    border-radius: 5px;
+    background-color: deepskyblue;
+}
+
+nav ul{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: initial;
+    display: block;
+    padding: 1rem 2rem;
+    border:1px solid black;
+    white-space: nowrap;
+}
+
+/* Basados en inline-block*/
+
+#menu1 li{
+    display: inline-block;
+}
+
+#menu2 li{
+    float: left;
+    width: 15%;
+}
+
+#menu2 ul{
+    overflow: hidden;    
+}
+
+#menu3 ul{
+    display: flex;
+    justify-content: center;
+}
+
+#menu3 li{
+   width: 15%;
+}
+
+#menu4 ul{
+    display: grid;
+    grid-column-gap: 2px;
+    grid-template-columns: 12.5% 1fr 1fr 1fr 1fr 1fr 12.5%;
+}
+
+#menu4 ul::before,
+#menu4 ul::afer{
+    content: "";
+    display: block;
+
+}
+
+#menu4 li{
+    width: 15%;
+}
+
+
